@@ -1,0 +1,1743 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:aqua-risk="http://www.ntu.edu.vn/ontology/aqua-risk#"
+     xmlns:shrimp-risk="http://www.ntu.edu.vn/ontology/shrimp-risk#">
+    <owl:Ontology rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk">
+        <owl:imports rdf:resource="file:/C:/Users/duc%20anh/Desktop/DoAnTotNghiep/aquaculture-risk-ontology/aqua_kg_multiPond.ttl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generatedAtTime -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generatedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasAction">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasBiometricParam -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasBiometricParam">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#BiometricParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasDataQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasDataQuality"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseEvent -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseEvent">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasObservation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasWaterParam -->
+
+    <owl:ObjectProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasWaterParam">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasCorrectiveInterventions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasCorrectiveInterventions">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasDO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasDO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasDataConfidenceScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasDataConfidenceScore"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseOccurrence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseOccurrence">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseEvent"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasOxygenationInterventions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasOxygenationInterventions">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasPH -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasPH">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasSHACL_ViolationCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasSHACL_ViolationCount"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasTemp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasTemp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#hasTurbidity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasTurbidity">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#observedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#observedAtTime">
+        <rdfs:domain rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#BiometricParameter -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#BiometricParameter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#CorrectiveAction -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#CorrectiveAction">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#DO -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#DO">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseEvent -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseEvent"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseOccurrence -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseOccurrence">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Farm -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Farm"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#FeedingAdjustment -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#FeedingAdjustment">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#FishWeight -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#FishWeight">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#BiometricParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Oxygenation -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Oxygenation">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#SensorDataQuality -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#SensorDataQuality">
+        <terms:description>Represents the trustworthiness of sensor readings based on SHACL validation results.</terms:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Species -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Species"/>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#SurvivalRate -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#SurvivalRate">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#BiometricParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Temp -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Temp">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Turbidity -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Turbidity">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#WaterChange -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#WaterChange">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#ManagementAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#pH -->
+
+    <owl:Class rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#pH">
+        <rdfs:subClassOf rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#WaterParameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Platform -->
+
+    <rdf:Description rdf:about="http://www.w3.org/ns/sosa/Platform">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Procedure"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Dataset_Mendeley_2024 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Dataset_Mendeley_2024">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-14T15:40:19.178052</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-16T11:34:45.182004</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-17T15:10:08.547516</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-03-19T21:52:32.975957</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-11T22:19:05.813722</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-26T15:14:44.657399</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-26T16:25:55.585011</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-26T16:28:08.617051</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-26T16:39:46.786551</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-05T23:12:07.217312</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-30T20:15:48.371711</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-05-31T21:25:14.816804</terms:created>
+        <terms:source>Fish Health and Water Quality Dataset (Mendeley, 2024)</terms:source>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Degraded -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Degraded">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#SensorDataQuality"/>
+        <aqua-risk:hasDataConfidenceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</aqua-risk:hasDataConfidenceScore>
+        <terms:description>One SHACL violation detected. Data should be used with caution.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseFactor -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseFactor">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#High -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#High">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#HighTemp -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#HighTemp">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#HighTurbidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#HighTurbidity">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Low">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#LowDO -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#LowDO">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#LowTemp -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#LowTemp">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#LowTurbidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#LowTurbidity">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Medium">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#MediumDO -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#MediumDO">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#MediumTemp -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#MediumTemp">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#MediumTurbidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#MediumTurbidity">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Mock_Data_Generator_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Mock_Data_Generator_V1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <terms:description>Python script generating synthetic ponds based on Pond 1 distribution</terms:description>
+        <prov:wasDerivedFrom rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Dataset_Mendeley_2024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#NoOxygenation -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#NoOxygenation">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#RiskFactor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond_01">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond_02">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond_03">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond_04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond_04">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Pond_05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Pond_05">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Pond"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Unreliable -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Unreliable">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#SensorDataQuality"/>
+        <aqua-risk:hasDataConfidenceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</aqua-risk:hasDataConfidenceScore>
+        <terms:description>Two or more SHACL violations. Data confidence is low.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ntu.edu.vn/ontology/aqua-risk#Verified -->
+
+    <owl:NamedIndividual rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#Verified">
+        <rdf:type rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#SensorDataQuality"/>
+        <aqua-risk:hasDataConfidenceScore rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</aqua-risk:hasDataConfidenceScore>
+        <terms:description>All SHACL constraints satisfied. Data is fully reliable.</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#">
+        <prov:wasDerivedFrom rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Dataset_Mendeley_2024"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.ntu.edu.vn/ontology/shrimp-risk#">
+        <prov:wasDerivedFrom rdf:resource="http://www.ntu.edu.vn/ontology/shrimp-risk#Dataset_Mendeley_2024"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ntu.edu.vn/ontology/aqua-risk#hasObservation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/actsOnProperty"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasResult"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hasSample"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/hosts"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isActedOnBy"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isHostedBy"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isObservedBy"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isResultOf"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/isSampleOf"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeActuation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeByActuator"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeBySampler"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeObservation"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/madeSampling"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observedProperty"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/observes"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/phenomenonTime"/>
+            <rdf:Description rdf:about="http://www.w3.org/ns/sosa/usedProcedure"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/oxy">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_HighRisk_LowDO_HighTemp</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.0</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasTemp"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDO"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#LowDO"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#High"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#HighTemp"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_LowRisk_LowTurbidity</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasTurbidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.30</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.71</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Low"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#LowTurbidity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_MediumRisk_TurbidityWarning</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasTurbidity"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.71</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Medium"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#MediumTurbidity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_HighRisk_HighTurbidity</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasTurbidity"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/turb"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#High"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#HighTurbidity"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_MediumRisk_DiseaseOccurenceWarning_NoOxigenation:</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseEvent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseOccurrence"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasOxygenationInterventions"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/oxy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/oxy"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Medium"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#NoOxygenation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseFactor"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_HighRisk_DiseaseOccurenceIncr_NoOxigenation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseEvent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseOccurrence"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasOxygenationInterventions"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/oxy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/oxy"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#High"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#NoOxygenation"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseFactor"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_LowRisk_DiseaseOccurence_HasOxygenation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseEvent"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDiseaseOccurrence"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/de"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/cases"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Low"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#DiseaseFactor"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>Rule_MediumRisk_MediumTemp_MediumDO</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasTemp"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasDO"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.35</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/temp"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.0</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                        <swrl:arguments>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/do"/>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.34</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </swrl:arguments>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskLevel"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#Medium"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#MediumTemp"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#hasRiskFactor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ducanh/ontologies/2026/2/untitled-ontology-2/obs"/>
+                                        <swrl:argument2 rdf:resource="http://www.ntu.edu.vn/ontology/aqua-risk#MediumDO"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
